@@ -30,8 +30,8 @@ function App() {
 
   return (
     <>
-      <div className="   border border-purple-700 border-1 rounded-md max-w-2xl h-40 mx-auto mt-20 text-center">
-        <div className="flex-col flex justify-center items-center p-12">
+      <div className="   border border-purple-700 bg-purple-950  border-1 rounded-md max-w-xl h-40 mx-auto mt-20 text-center">
+        <div className="flex-col flex justify-center items-center px-6 py-12">
           <div className="flex flex-row gap-x-2">
             <input
               type="text"
@@ -65,11 +65,16 @@ function App() {
             </select>
           </div>
           <div className="mt-6">
-            <p className="text-purple-700 text-sm font-semibold">
+            <p className="text-white text-sm font-semibold">
               {amountInput}{" "}
-              <span className="text-gray-500 text-xs">{fromCurrency}</span> ==={" "}
-              {output}
-              <span className="text-gray-500 text-xs"> {toCurrency}</span>
+              <span className="text-gray-300 font-semibold text-xs">
+                {fromCurrency}
+              </span>{" "}
+              === {output}
+              <span className="text-gray-300 font-semibold text-xs">
+                {" "}
+                {toCurrency}
+              </span>
             </p>
           </div>
         </div>
